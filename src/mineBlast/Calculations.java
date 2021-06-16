@@ -9,12 +9,12 @@ public class Calculations {
 	String[] blasterNames = { "Dynamex A", "Dynamex M", "ANFO", "ANFO (%5 Al Katkili}", "Dinamit 1", "Dinamit 2",
 			"Dinamit 4", "Gomme A", "Gomme AS", "Gomme AT", "Gomme 777", "Gom I", "Gom II", "Gom III",
 			"Grizu Guvenli Dinamit", "Jelatinit Dinamit", "Elbar I", "Gurit A", "Emulite 100", "Emulite 150",
-			"Emulite 200", "Emulite 300"};
+			"Emulite 200", "Emulite 300" };
 
-	double[] blasterDensity = {1.40, 1.40, 0.85, 0.87, 0.98, 1.00, 1.00, 1.55, 1.57, 1.55, 1.53, 1.50, 1.50, 1.50,
+	double[] blasterDensity = { 1.40, 1.40, 0.85, 0.87, 0.98, 1.00, 1.00, 1.55, 1.57, 1.55, 1.53, 1.50, 1.50, 1.50,
 			1.10, 1.50, 1.00, 1.00, 1.20, 1.21, 1.25, 1.28 };
 
-	double[] blasterPowerFactor = {1.02, 1.00, 0.96, 1.10, 1.06, 0.94, 1.05, 1.28, 1.15, 1.11, 0.99, 1.28, 1.15, 1.02,
+	double[] blasterPowerFactor = { 1.02, 1.00, 0.96, 1.10, 1.06, 0.94, 1.05, 1.28, 1.15, 1.11, 0.99, 1.28, 1.15, 1.02,
 			0.58, 1.00, 0.76, 0.81, 0.75, 0.95, 0.75, 0.73 };
 
 	public double[] calculate(double stepH, String blasterName1, String blasterName2, double holeD, double rockC,
@@ -38,7 +38,7 @@ public class Calculations {
 		double Lkol = H - Ldip - S;
 		double Qkol = Lkol * holeArea * getBlasterDensity(blasterName1) / 1000;
 		double Qtop = Qdip + Qkol;
-		double Y = (Qdip + Qkol) * 0.03 ;
+		double Y = (Qdip + Qkol) * 0.03;
 		double I = H / (E * V * stepH);
 		double q = (Qdip + Qkol) / (E * V * stepH);
 		double W = (E * V * stepH);
