@@ -1,6 +1,6 @@
 # Mining Blasting Assistant
 
-Madenler için patlatma asistanı. Yüksek Lisans çalışmalarım için yazdığım bir programdır.
+Madenler için patlatma asistanı. Yüksek Lisans çalışmalarım için geliştirilmiş bir programdır.
 
 ## Programın Amaci
 
